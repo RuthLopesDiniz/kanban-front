@@ -11,12 +11,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Kanban</title>
   </head>
   <body>
     <main class="kanban">
       <!--Coluna 1-->
-      <div class="kanban-column">
+      <div class="kanban-column" data-id="1">
         <div class="kanban-title">
           <h2>Pendente</h2>
           <button class="add-card">
@@ -25,8 +26,8 @@
         </div>
 
         <div class="kanban-cards">
-          <div class="kanban-card">
-            <div class="bagde hight">
+          <div class="kanban-card dragging" draggable="true">
+            <div class="badge hight">
               <span>Alta prioridade</span>
             </div>
 
@@ -40,7 +41,7 @@
                 </p>
 
                 <p>
-                  <i class="fa-regular fa-paperclick"></i>
+                  <i class="fa-solid fa-paperclip"></i>
                   1
                 </p>
               </div>
@@ -54,7 +55,7 @@
       </div>
 
       <!--Coluna 2-->
-      <div class="kanban-column">
+      <div class="kanban-column" data-id="2">
         <div class="kanban-title">
           <h2>Frontend</h2>
           <button class="add-card">
@@ -63,8 +64,8 @@
         </div>
 
         <div class="kanban-cards">
-          <div class="kanban-card">
-            <div class="bagde hight">
+          <div class="kanban-card dragging" draggable="true">
+            <div class="badge medium">
               <span>Alta prioridade</span>
             </div>
 
@@ -78,7 +79,7 @@
                 </p>
 
                 <p>
-                  <i class="fa-regular fa-paperclick"></i>
+                  <i class="fa-solid fa-paperclip"></i>
                   1
                 </p>
               </div>
@@ -92,7 +93,7 @@
       </div>
 
       <!--Coluna 3-->
-      <div class="kanban-column">
+      <div class="kanban-column" data-id="3">
         <div class="kanban-title">
           <h2>Backend</h2>
           <button class="add-card">
@@ -101,8 +102,8 @@
         </div>
 
         <div class="kanban-cards">
-          <div class="kanban-card">
-            <div class="bagde hight">
+          <div class="kanban-card dragging" draggable="true">
+            <div class="badge low">
               <span>Alta prioridade</span>
             </div>
 
@@ -116,7 +117,7 @@
                 </p>
 
                 <p>
-                  <i class="fa-regular fa-paperclick"></i>
+                  <i class="fa-solid fa-paperclip"></i>
                   1
                 </p>
               </div>
@@ -130,7 +131,7 @@
       </div>
 
       <!--Coluna 4-->
-      <div class="kanban-column">
+      <div class="kanban-column" data-id="4">
         <div class="kanban-title">
           <h2>Em teste</h2>
           <button class="add-card">
@@ -139,8 +140,8 @@
         </div>
 
         <div class="kanban-cards">
-          <div class="kanban-card">
-            <div class="bagde hight">
+          <div class="kanban-card dragging" draggable="true">
+            <div class="badge hight">
               <span>Alta prioridade</span>
             </div>
 
@@ -154,7 +155,7 @@
                 </p>
 
                 <p>
-                  <i class="fa-regular fa-paperclick"></i>
+                  <i class="fa-solid fa-paperclip"></i>
                   1
                 </p>
               </div>
@@ -168,7 +169,7 @@
       </div>
 
       <!--Coluna 5-->
-      <div class="kanban-column">
+      <div class="kanban-column" data-id="5">
         <div class="kanban-title">
           <h2>Concluído</h2>
           <button class="add-card">
@@ -177,8 +178,8 @@
         </div>
 
         <div class="kanban-cards">
-          <div class="kanban-card">
-            <div class="bagde hight">
+          <div class="kanban-card dragging" draggable="true">
+            <div class="badge hight">
               <span>Alta prioridade</span>
             </div>
 
@@ -192,7 +193,7 @@
                 </p>
 
                 <p>
-                  <i class="fa-regular fa-paperclick"></i>
+                  <i class="fa-solid fa-paperclip"></i>
                   1
                 </p>
               </div>
@@ -205,5 +206,6 @@
         </div>
       </div>
     </main>
+    <script src="src/javaScript/script.js"></script>
   </body>
 </html>
