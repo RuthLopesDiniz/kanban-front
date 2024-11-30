@@ -148,7 +148,11 @@ body {
 }
 
 .dragging {
-  opacity: 0.5px;
+  opacity: 0.5;
+}
+.cards-hover {
+  background-color: #eaeffa;
+  border-radius: 8px;
 }
 
 *::-webkit-scrollbar {
